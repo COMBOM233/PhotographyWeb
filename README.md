@@ -1,40 +1,10 @@
-   src/
-  ├── App.vue
-├── assets
-|  ├── background.jpg
-|  ├── camera.png
-|  ├── image.jpg
-|  ├── portfolio
-|  └── services
-├── components
-|  ├── AnimatedContent.vue
-|  ├── FooterElement.vue#底部版权
-|  └── NavbarElement.vue#顶部导航栏
-├── HomeView.vue
-├── main.js
-├── router
-|  └── index.js#路由
-├── sections
-|  ├── AboutSection.vue
-|  ├── ContactSection.vue
-|  ├── MainSection.vue
-|  ├── PortfolioSection.vue
-|  └── ServiceSection.vue
-├── style.css
-└── views
-   └── AboutView.vue
+# Static Photography Website page
 
-## PortfolioSection
+### 使用Vue3+Tailwind+TS开发
 
-改为轮播形式
+To run this project,You need to:
 
-## AboutSection
+1. npm install
 
-修改内容
+2. npm run serve
 
-首页基本修改完成-6.17
-
-安装ts，添加动画库
-
-TODO:
-应用动画完成风格页
