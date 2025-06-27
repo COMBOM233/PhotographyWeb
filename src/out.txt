@@ -1,0 +1,28 @@
+D:\photography-landing-page-master\src
+├── App.vue
+├── assets
+|  ├── background.jpg
+|  ├── camera.png
+|  ├── image.jpg
+|  ├── portfolio
+|  └── services
+├── components
+|  ├── AnimatedContent.vue
+|  ├── FooterElement.vue
+|  └── NavbarElement.vue
+├── HomeView.vue
+├── main.js
+├── router
+|  └── index.js
+├── sections
+|  ├── AboutSection.vue
+|  ├── ContactSection.vue
+|  ├── MainSection.vue
+|  ├── PortfolioSection.vue
+|  └── ServiceSection.vue
+├── style.css
+└── views
+   └── AboutView.vue
+
+directory: 7 file: 17
+
