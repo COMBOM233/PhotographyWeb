@@ -1,6 +1,6 @@
 <template>
-  <div class="relative flex flex-row justify-center w-svw h-max bg-white">
-    <div class="absolute left-24 top-0 w-max h-max">
+  <div class="relative flex flex-col md:flex-row justify-center w-svw h-max bg-white">
+    <div class="w-full h-full md:absolute md:left-24 md:top-0 md:w-max md:h-max">
       <ClientOnly>
         <CardContainer>
           <CardBody
@@ -21,7 +21,7 @@
         </CardContainer>
       </ClientOnly>
     </div>
-    <div class="w-max h-max">
+    <div class="w-full h-full md:w-max md:h-max">
       <ClientOnly>
         <CardContainer>
           <CardBody
@@ -43,7 +43,7 @@
       </ClientOnly>
     </div>
 
-    <div class="absolute right-24 top-0 w-max h-max">
+    <div class="w-full h-full md:absolute md:right-24 md:top-0 md:w-max md:h-max">
       <ClientOnly>
         <CardContainer>
           <CardBody
@@ -67,8 +67,8 @@
 
   </div>
   <div class="relative flex flex-row justify-center w-svw h-10 bg-white"></div>
-  <div class="relative flex flex-row justify-center w-svw h-max bg-white">
-    <div class="absolute left-24 top-0 w-max h-max">
+  <div class="relative flex flex-col md:flex-row justify-center w-svw h-max bg-white">
+    <div class="w-full h-full md:absolute md:left-24 md:top-0 md:w-max md:h-max">
       <ClientOnly>
         <CardContainer>
           <CardBody
@@ -89,7 +89,7 @@
         </CardContainer>
       </ClientOnly>
     </div>
-    <div class="w-max h-max">
+    <div class="w-full h-full md:w-max md:h-max">
       <ClientOnly>
         <CardContainer>
           <CardBody
@@ -110,7 +110,7 @@
         </CardContainer>
       </ClientOnly>
     </div>
-    <div class="absolute right-24 top-0 w-max h-max">
+    <div class="w-full h-full md:absolute md:right-24 md:top-0 md:w-max md:h-max">
       <ClientOnly>
         <CardContainer>
           <CardBody
