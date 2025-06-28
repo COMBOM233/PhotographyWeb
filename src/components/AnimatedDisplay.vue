@@ -37,10 +37,8 @@
                 <img
                   :src="testimonial.image"
                   :alt="testimonial.name"
-                  width="500"
-                  height="500"
                   :draggable="false"
-                  class="size-full rounded-3xl object-cover object-center"
+                  class="size-full rounded-3xl object-cover object-center w-[400px] h-[400px]"
                 />
               </Motion>
             </AnimatePresence>

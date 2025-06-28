@@ -1,41 +1,44 @@
 <template>
 	<!-- Main section start -->
-	<section class="h-screen px-12 lg:px-32 py-32 mb-8">
-		<div class="w-full md:w-1/2 h-full flex flex-col md:justify-center ">
-			<!-- Main text start -->
-			<h1 class="uppercase text-5xl mb-4 font-semibold ">
-				向您介绍我们的工作室成员
-			</h1>
-			<p class="capitalize xl:w-1/2 text-stone-500">
-				对不起, 我没有专业的肖像图片, 只有基米图片
-			</p>
-			<!-- Main text end -->
+	<section class="h-max sm:h-screen px-12 lg:px-32 py-32 mb-8">
+		<div class="flex flex-col sm:flex-row w-full h-full items-center justify-center">
+			<div class="w-full md:w-1/2 h-full flex flex-col md:justify-center ">
+				<!-- Main text start -->
+				<h1 class="uppercase text-3xl sm:text-5xl mb-4 font-semibold ">
+					向您介绍我们的工作室成员
+				</h1>
+				<p class="capitalize xl:w-1/2 text-stone-500">
+					对不起, 我没有专业的肖像图片, 只有基米图片
+				</p>
+				<!-- Main text end -->
 
-			<!-- Social links start -->
-			<div class="flex mt-3 gap-8">
-				<a href="#">
-					<i class="fa-brands fa-instagram socialIcon"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-linkedin socialIcon"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-facebook socialIcon"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-dribbble socialIcon"></i>
-				</a>
-				<a href="#">
-					<i class="fa-brands fa-pinterest socialIcon"></i>
-				</a>
+				<!-- Social links start -->
+				<div class="flex mt-3 gap-8">
+					<a href="#">
+						<i class="fa-brands fa-instagram socialIcon"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-linkedin socialIcon"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-facebook socialIcon"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-dribbble socialIcon"></i>
+					</a>
+					<a href="#">
+						<i class="fa-brands fa-pinterest socialIcon"></i>
+					</a>
+				</div>
+				<!-- Social links end -->
 			</div>
-			<!-- Social links end -->
+
+			<!-- Photographer image start -->
+			<div class="h-2/5 sm:h-1/4 md:h-2/5 lg:h-4/6">
+				<AnimatedDisplay :testimonials="testimonials" :autoplay="true" :duration="5000" />
+			</div>
 		</div>
 
-		<!-- Photographer image start -->
-		<div class="absolute bottom-0 right-0 h-2/5 sm:h-1/2 md:h-3/5 lg:h-4/6">
-			<AnimatedDisplay :testimonials="testimonials" :autoplay="true" :duration="5000" />
-		</div>
 
 		<!-- Photographer image end -->
 

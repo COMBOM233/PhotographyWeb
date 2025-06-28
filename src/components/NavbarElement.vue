@@ -10,7 +10,7 @@
 
 		<!-- Toggler start -->
 		<button role="menubar" class="md:hidden" @click="navToggle()">
-			<i class="fa-solid fa-bars text-2xl"></i>
+			<img src="@/assets/menu_toggle.png" alt="menu" class="w-8 h-8">
 		</button>
 		<!-- Toggler end -->
 
