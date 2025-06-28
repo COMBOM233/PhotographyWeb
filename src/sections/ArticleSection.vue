@@ -15,8 +15,8 @@
                     <p class="text-4xl font-bold">Article NO.{{ article.id }} - {{ article.title }}</p>
                     <div class="bg-black w-64 h-1 rounded-none"></div>
                     <div class="relative w-full h-full">
-                        <HeightFadeContent :fadeHeight="100">
-                            <p class="text-sm">{{ article.content }}</p>
+                        <HeightFadeContent :fadeHeight="180">
+                            <p class="text-sm font-sans">{{ article.content }}</p>
                         </HeightFadeContent>
                         <router-link :to="`/articles/${article.id}`" class="text-sm absolute bottom-0 right-0 hover:underline">查看详情-></router-link>
                     </div>
