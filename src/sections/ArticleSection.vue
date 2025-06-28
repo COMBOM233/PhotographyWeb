@@ -8,7 +8,7 @@
             </div>
 
             <div class="flex flex-row items-center w-full h-96">
-                <router-link :to="`/articles/${article.id}`" class="w-80 h-64 mr-4">
+                <router-link :to="`/articles/${article.id}`" class="w-40 h-64 md:w-80 md:h-64 mr-4">
                     <img :src="article.image" :alt="`article_${article.id}`" class="w-full h-full object-cover hover:opacity-80 transition-opacity">
                 </router-link>
                 <div class="flex flex-col w-full h-64 hidden md:block">
