@@ -10,3 +10,5 @@ To run this project,You need to:
 
 2. npm run serve
 
+###6.29
+现在可以通过修改articles.ts来自动生成文章页面了
