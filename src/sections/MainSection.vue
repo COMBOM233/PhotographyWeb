@@ -1,6 +1,9 @@
 <template>
 	<!-- Main section start -->
 	<section class="h-max sm:h-screen px-12 lg:px-32 py-32 mb-8">
+		<AuroraBackground class="absolute left-0 top-8 h-full w-full z-[-10]">
+
+		</AuroraBackground>
 		<div class="flex flex-col sm:flex-row w-full h-full items-center justify-center">
 			<div class="w-full md:w-1/2 h-full flex flex-col md:justify-center ">
 				<!-- Main text start -->
@@ -40,6 +43,8 @@
 		</div>
 
 
+
+
 		<!-- Photographer image end -->
 
 		<!-- "More" button start -->
@@ -61,6 +66,7 @@ import AnimatedDisplay from '@/components/AnimatedDisplay.vue';
 import pic1 from '@/assets/cats/cat1.jpeg';
 import pic2 from '@/assets/cats/cat2.jpg';
 import pic3 from '@/assets/cats/cat3.png';
+import AuroraBackground from '@/components/AuroraBackground.vue';
 // 导入图片
 
 

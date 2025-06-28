@@ -1,8 +1,8 @@
 <template>
     <section id="playground-section" class="px-12 lg:px-32 py-16 border-t border-stone-500 relative">
         <h1 class="uppercase text-5xl mb-4 mt-16 font-semibold ">
-			这个页面用于测试各种样式和动画效果，部署后替换为实际页面
-		</h1>
+            这个页面用于测试各种样式和动画效果，部署后替换为实际页面
+        </h1>
         <div class="relative">
             <animated-content ref="animatedContent">
                 <div class="relative">
@@ -10,16 +10,17 @@
                 </div>
             </animated-content>
             <AnimatedContent>
-                
+
             </AnimatedContent>
         </div>
     </section>
     <section id="StyleTest-section" class="px-12 lg:px-32 py-16 border-t border-stone-500 relative">
         <h1 class="uppercase text-5xl mb-4 mt-16 font-semibold ">
-			StyleTest
-		</h1>
+            StyleTest
+        </h1>
         <div class="relative border-4 w-max">
-            <img src="@/assets/styleTitle/style1.jpg" alt="StyleTest" class="w-500 h-500 transition-opacity duration-500">
+            <img src="@/assets/styleTitle/style1.jpg" alt="StyleTest"
+                class="w-500 h-500 transition-opacity duration-500">
             <div class="absolute inset-y-0 inset-x-52 flex flex-col items-center justify-center w-max">
                 <h2 class="text-4xl font-bold mb-4 text-white">摄影的艺术</h2>
                 <p class="text-xl text-white">捕捉每一个珍贵的瞬间</p>
@@ -30,24 +31,58 @@
     <AnimationTest></AnimationTest>
     <section id="HeightFadeContent-section" class="px-12 lg:px-32 py-16 border-t border-stone-500 relative">
         <HeightFadeContent :fadeHeight="100">
-            <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan ligula ac ipsum bibendum suscipit. Nunc luctus libero lectus, et semper neque commodo in. Duis luctus, ligula eget ultrices fringilla, urna libero cursus est, at lobortis metus justo in sapien. Maecenas sit amet urna sed ligula rutrum sollicitudin. Fusce luctus pellentesque augue, ac porttitor lectus ultrices eget. Nullam commodo orci ut tincidunt volutpat. Curabitur in sagittis nisi. Quisque porta turpis at ipsum ultricies laoreet. Fusce quam orci, gravida sit amet facilisis at, faucibus ut turpis. Vestibulum aliquam massa lacus, condimentum tempus nisl iaculis a. Ut accumsan cursus velit. Nunc commodo nulla ut laoreet malesuada. Sed ultrices porta metus.</p>
+            <p class="text-2xl">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan ligula ac ipsum
+                bibendum suscipit. Nunc luctus libero lectus, et semper neque commodo in. Duis luctus, ligula eget
+                ultrices fringilla, urna libero cursus est, at lobortis metus justo in sapien. Maecenas sit amet urna
+                sed ligula rutrum sollicitudin. Fusce luctus pellentesque augue, ac porttitor lectus ultrices eget.
+                Nullam commodo orci ut tincidunt volutpat. Curabitur in sagittis nisi. Quisque porta turpis at ipsum
+                ultricies laoreet. Fusce quam orci, gravida sit amet facilisis at, faucibus ut turpis. Vestibulum
+                aliquam massa lacus, condimentum tempus nisl iaculis a. Ut accumsan cursus velit. Nunc commodo nulla ut
+                laoreet malesuada. Sed ultrices porta metus.</p>
         </HeightFadeContent>
     </section>
     <section id="TextGenerate-section" class="px-12 lg:px-32 py-16 border-t border-stone-500 relative">
         <div class="flex flex-col items-center justify-center w-full h-max">
-            <TextGenerate duration="0.4" words="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan ligula ac ipsum bibendum suscipit. Nunc luctus libero lectus, et semper neque commodo in. Duis luctus, ligula eget ultrices fringilla, urna libero cursus est, at lobortis metus justo in sapien. Maecenas sit amet urna sed ligula rutrum sollicitudin. Fusce luctus pellentesque augue, ac porttitor lectus ultrices eget. Nullam commodo orci ut tincidunt volutpat. Curabitur in sagittis nisi. Quisque porta turpis at ipsum ultricies laoreet. Fusce quam orci, gravida sit amet facilisis at, faucibus ut turpis. Vestibulum aliquam massa lacus, condimentum tempus nisl iaculis a. Ut accumsan cursus velit. Nunc commodo nulla ut laoreet malesuada. Sed ultrices porta metus." class="text-2xl"></TextGenerate>
-          </div>  
+            <TextGenerate duration="0.4"
+                words="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis accumsan ligula ac ipsum bibendum suscipit. Nunc luctus libero lectus, et semper neque commodo in. Duis luctus, ligula eget ultrices fringilla, urna libero cursus est, at lobortis metus justo in sapien. Maecenas sit amet urna sed ligula rutrum sollicitudin. Fusce luctus pellentesque augue, ac porttitor lectus ultrices eget. Nullam commodo orci ut tincidunt volutpat. Curabitur in sagittis nisi. Quisque porta turpis at ipsum ultricies laoreet. Fusce quam orci, gravida sit amet facilisis at, faucibus ut turpis. Vestibulum aliquam massa lacus, condimentum tempus nisl iaculis a. Ut accumsan cursus velit. Nunc commodo nulla ut laoreet malesuada. Sed ultrices porta metus."
+                class="text-2xl"></TextGenerate>
+        </div>
+    </section>
+    <section id="AuroraBackground-section" class="w-full h-screen border-t border-stone-500 relative">
+        <AuroraBackground radialGradient="false">
+            <Motion as="div" :initial="{ opacity: 0, y: 40, filter: 'blur(10px)' }" :while-in-view="{
+                opacity: 1,
+                y: 0,
+                filter: 'blur(0px)',
+            }" :transition="{
+        delay: 0.3,
+        duration: 0.8,
+        ease: 'easeInOut',
+    }" class="relative flex flex-col items-center justify-center gap-4 px-4">
+                <div class="text-center text-3xl font-bold md:text-7xl dark:text-white">
+                    Background lights are cool you know.
+                </div>
+                <div class="py-4 text-base font-extralight md:text-4xl dark:text-neutral-200">
+                    And this, is chemical burn.
+                </div>
+                <button class="w-fit rounded-full bg-black px-4 py-2 text-white dark:bg-white dark:text-black">
+                    Burn it now
+                </button>
+            </Motion>
+        </AuroraBackground>
     </section>
 </template>
 
 
 <script setup>
+import { Motion } from 'motion-v'
 import { ref, onMounted, onUnmounted } from 'vue'
 import AnimatedContent from '@/components/AnimatedContent.vue'
 import { gsap } from 'gsap'
 import AnimationTest from '@/sections/AnimationTest.vue'
 import HeightFadeContent from '../components/HeightFadeContent.vue'
 import TextGenerate from '../components/TextGenerate.vue'
+import AuroraBackground from '@/components/AuroraBackground.vue'
 
 const texts = [
     '无人爱苦',
