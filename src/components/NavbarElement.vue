@@ -37,7 +37,7 @@
 				<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
 			</router-link>
 
-			<router-link to="/playground" role="menuitem" class="relative group">
+			<router-link to="/playground" role="menuitem" class="relative group hidden md:block">
 				<p class="mx-4" style="font-size: 20px;">花絮</p>
 				<span class="absolute bottom-0 left-0 w-0 h-0.5 bg-black group-hover:w-full transition-all duration-300"></span>
 			</router-link>
