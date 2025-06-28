@@ -5,12 +5,12 @@
     <div class="relative flex flex-col items-center justify-center w-full h-96">
         <AnimatedContent class="absolute left-0 bottom-20">
             <h1 class="uppercase text-5xl mb-4 font-semibold text-white">
-                APPRECIATIE THE BEST CRAFT OF US
+                KEEP IN TOUCH WITH US
             </h1>
         </AnimatedContent>
         <AnimatedContent class="absolute left-0 bottom-0">
             <p class="uppercase text-5xl mb-4 font-semibold text-white">
-                风 格 欣 赏
+                地 理 位 置
             </p>
         </AnimatedContent>
         <AnimatedContent class="absolute left-2 bottom-20">
@@ -20,8 +20,8 @@
 
 
     </div>
-    <div class="relative w-full h-screen bg-white">
-        <div class="absolute right-0 top-0 w-1/2 h-full">
+    <div class="relative w-full h-max md:h-screen bg-white">
+        <div class="absolute right-0 top-0 w-1/2 h-full hidden md:block">
             <baidu-map class="w-full h-full" :center="{ lng: 116.404, lat: 39.915 }" :zoom="15"
                 :scroll-wheel-zoom="true" @ready="handleMapReady">
                 <!-- 启用滚轮缩放 -->
@@ -29,27 +29,27 @@
                 <bm-navigation anchor="BMAP_ANCHOR_TOP_RIGHT"></bm-navigation>
             </baidu-map>
         </div>
-        <div class="absolute flex flex-col left-0 top-0 w-1/2 h-1/2 items-center">
+        <div class="flex flex-col md:absolute md:left-0 md:top-0 w-full md:w-1/2 h-1/2 items-center">
             <div
-                class="flex w-full h-max text-4xl font-semibold items-center justify-center mt-96">
+                class="flex ml-24 md:ml-0 w-full h-max text-4xl font-semibold items-center justify-center md:mt-96">
                 <h1>Photography Studio</h1>
             </div>
 
-            <div class="flex flex-col w-max h-max text-2xl items-center justify-center mt-10">
+            <div class="flex flex-col ml-4 md:ml-0 w-max h-max text-2xl items-center justify-center mt-10">
                 <div class="flex w-full h-max text-2xl">
-                    <h1>联系地址: NOWHERE</h1>
+                    <h1>联系地址: <span class="block md:inline">NOWHERE</span></h1>
                 </div>
                 <div class="flex w-full h-max text-2xl mt-10">
-                    <h1>客服热线: 12345667890</h1>
+                    <h1>客服热线: <span class="block md:inline">1234566789</span></h1>
                 </div>
                 <div class="flex w-full h-max text-2xl mt-10">
-                    <h1>客服邮箱: 12345667890@qq.com</h1>
+                    <h1>客服邮箱: <span class="block md:inline">1234566789@qq.com</span></h1>
                 </div>
             </div>
             <div class="flex w-full h-24 items-center justify-center mt-10">
                 <img src="@/assets/QRcode/QRcode_pic.jpg" alt="store_qrcode" class="w-full h-full object-scale-down">
             </div>
-            <div class="flex w-full h-max text-2xl mt-2 text-xs items-center justify-center">
+            <div class="flex w-full h-max text-xs mt-2 items-center justify-center mb-4 md:mb-0">
                 <h1>DONT SCAN THIS IT LEADS TO NOTHING</h1>
             </div>
         </div>
