@@ -1,10 +1,15 @@
 <template>
     <div class="relative flex flex-col items-center justify-center w-full h-max bg-white">
-        <div class="relative flex flex-row items-center justify-center w-1/2 h-96">
-            <p class="text-xs font-bold mb-44 mr-4"><span class="text-gray-500 text-4xl">26</span>/6/2025</p>
+        <div class="relative flex flex-row items-center justify-center w-10/12 md:w-1/2 h-96">
+            <div class="flex flex-col w-max h-max">
+                <p class="text-xs font-bold mb-4 md:mb-44 mr-4"><span class="text-gray-500 text-4xl">26</span>/6/2025</p>
+                <p class="text-4xl font-bold md:hidden">Article NO.1 - Skating Girl</p>
+                <p class="text-2xl md:hidden mt-4">查看详情-></p>
+            </div>
+
             <div class="flex flex-row items-center w-full h-96">
                 <img src="@/assets/portfolio/portfolio9.jpg" alt="article_1" class="w-80 h-64 object-cover mr-4">
-                <div class="flex flex-col w-full h-64">
+                <div class="flex flex-col w-full h-64 hidden md:block">
                     <p class="text-4xl font-bold">Article NO.1 - Skating Girl</p>
                     <div class="bg-black w-64 h-1 rounded-none"></div>
                     <div class="relative w-full h-full">
@@ -25,11 +30,16 @@
             </div>
             <div class="absolute bottom-0 bg-black w-full h-1 rounded-none"></div>
         </div>
-        <div class="relative flex flex-row items-center justify-center w-1/2 h-96">
-            <p class="text-xs font-bold mb-44 mr-4"><span class="text-gray-500 text-4xl">24</span>/6/2025</p>
+        <div class="relative flex flex-row items-center justify-center w-10/12 md:w-1/2 h-96">
+            <div class="flex flex-col w-max h-max">
+                <p class="text-xs font-bold mb-4 md:mb-44 mr-4"><span class="text-gray-500 text-4xl">24</span>/6/2025</p>
+                <p class="text-4xl font-bold md:hidden">Article NO.2 - Working Man</p>
+                <p class="text-2xl md:hidden mt-4">查看详情-></p>
+            </div>
+
             <div class="flex flex-row items-center w-full h-96">
                 <img src="@/assets/portfolio/portfolio8.jpg" alt="article_2" class="w-80 h-64 object-cover mr-4">
-                <div class="flex flex-col w-full h-64">
+                <div class="flex flex-col w-full h-64 hidden md:block">
                     <p class="text-4xl font-bold">Article NO.2 - Working Man</p>
                     <div class="bg-black w-64 h-1 rounded-none"></div>
                     <div class="relative w-full h-full">
