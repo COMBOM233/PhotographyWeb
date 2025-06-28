@@ -9,7 +9,7 @@
             </h1>
         </AnimatedContent>
         <AnimatedContent class="absolute left-0 bottom-0">
-            <p class="uppercase text-5xl mb-4 font-semibold text-white">
+            <p class="uppercase text-4xl md:text-5xl mb-4 font-semibold text-white">
                 进 一 步 了 解 我 们
             </p>
         </AnimatedContent>
@@ -19,9 +19,9 @@
 
     </div>
     <div class="relative flex flex-col items-center w-full h-max bg-white">
-        <div class="flex flex-col w-5/12 h-max">
-            <p class="text-5xl font-semibold">品牌介绍</p>
-            <div class="bg-gray-500 w-48 h-1 rounded-none mt-4"></div>
+        <div class="flex flex-col w-full md:w-5/12 h-max items-center md:items-start">
+            <p class="text-5xl font-semibold w-full text-center mt-10 md:text-left md:w-max">品牌介绍</p>
+            <div class="bg-gray-500 w-3/4 md:w-48 h-1 rounded-none mt-4"></div>
             <div class="flex flex-row mt-4 text-stone-500 w-full">
                 <TextGenerate :words="brandText" :duration="0.4" class="text-1xl" />
             </div>
